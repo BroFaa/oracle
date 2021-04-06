@@ -23,9 +23,7 @@
         select * from wnf.orders where order_date
         between to_date('2017-1-1','yyyy-mm-dd') and to_date('2018-6-1','yyyy-mm-dd');
      ```
-
-    - 查询结果1
-     ![avatar](4.png)
+![avatar](4.png)
    - 查询语句2
      ```
         select a.ORDER_ID,a.CUSTOMER_NAME,
@@ -34,8 +32,7 @@
         a.ORDER_ID=b.order_id and
         a.order_date between to_date('2017-1-1','yyyy-mm-dd') and to_date('2018-6-1','yyyy-mm-dd');
      ```
-    - 查询结果2
-     ![avatar](5.png)
+![avatar](5.png)
 ### 查看数据库的使用情况
 ```
 SQL>SELECT tablespace_name,FILE_NAME,BYTES/1024/1024 MB,MAXBYTES/1024/1024 MAX_MB,autoextensible FROM dba_data_files  WHERE  tablespace_name='USERS';
