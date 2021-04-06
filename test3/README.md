@@ -17,7 +17,7 @@
 #### 3. 查询插入的条数
    ![avatar](3.png)
 #### 4.编写两条查询语句
-   - ##### 查询语句1
+   - 查询语句1
      ```
         set autotrace on
         select * from wnf.orders where order_date
@@ -26,7 +26,7 @@
 
     - 查询结果1
      ![avatar](4.png)
-   - ##### 查询语句2
+   - 查询语句2
      ```
         select a.ORDER_ID,a.CUSTOMER_NAME,
         b.product_name,b.product_num,b.product_price
@@ -50,5 +50,5 @@ SQL>SELECT a.tablespace_name "表空间名",Total/1024/1024 "大小MB",
 ```
 ![avatar](6.png)
 ![avatar](7.png)
-###  实验总结
+### 实验总结
 通过本次的实验，学习了Oracle对表的分区，掌握了分区表的创建方法，还有一些数据的操作，实验过程中也遇到一些小问题，但都能顺利解决。
