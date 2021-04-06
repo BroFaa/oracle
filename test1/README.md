@@ -30,19 +30,19 @@ GROUP BY d.department_name
 HAVING d.department_name in ('IT','Sales');
 ```
 #### 运行结果1
-![avatar](1.png)
+![avatar](/test1/1.png)
 #### 运行结果2
-![avatar](2.png)
+![avatar](/test1/2.png)
 
 #### 执行上面两个比较复杂的返回相同查询结果数据集的SQL语句，通过分析SQL语句各自的执行计划，判断哪个SQL语句是最优的。最后将你认为最优的SQL语句通过sqldeveloper的优化指导工具进行优化指导，看看该工具有没有给出优化建议
 
-![avatar](3.png)
+![avatar](/test1/3.png)
 
 #### 用户hr默认没有统计权限，运行上述命令时要报错：无法收集统计信息, 请确保用户具有正确的访问权限。统计信息功能要求向用户授予v_sesstat, v_$statname 和 v_$session 的选择权限。怎样解决？
 
 #### 解决方法 赋予权限
 
-![avatar](4.png)
+![avatar](/test1/4.png)
 
 
 
@@ -57,7 +57,7 @@ where e.department_id =d.department_id
 and e.salary>=10000
 order by e.salary desc;
 ```
-![avatar](5.png)
+![avatar](/test1/5.png)
 
 #### 优化指导
-![avatar](6.png)
+![avatar](/test1/6.png)
